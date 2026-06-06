@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanPro — Профессиональный клининг</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-spray-can-sparkles"></i>
+                CleanPro
+            </div>
+
+            <nav class="nav">
+                <a href="#">Главная</a>
+                <a href="#services">Услуги</a>
+                <a href="#prices">Цены</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:+79991234567" class="phone">
+                    +7 (999) 123-45-67
+                </a>
+                <a href="#calculator" class="btn btn-primary">
+                    Вызвать клинера
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+            <h1>Идеальная чистота без лишних забот</h1>
+
+            <p>
+                Профессиональная уборка квартир, домов и офисов.
+                Работаем быстро, аккуратно и с гарантией качества.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#calculator" class="btn btn-primary">
+                    Рассчитать стоимость
+                </a>
+
+                <a href="#services" class="btn btn-secondary">
+                    Наши работы
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Почему выбирают нас</h2>
+            </div>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h3>Эко-средства</h3>
+                    <p>Безопасные для детей, животных и окружающей среды.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-user-check"></i>
+                    <h3>Проверенные клинеры</h3>
+                    <p>Опытные сотрудники проходят обучение и проверку.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <h3>Фиксированная цена</h3>
+                    <p>Стоимость известна заранее без скрытых доплат.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fa-solid fa-shield-heart"></i>
+                    <h3>100% гарантия</h3>
+                    <p>Если что-то не устроит — исправим бесплатно.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Популярные услуги</h2>
+            </div>
+
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <h3>Поддерживающая уборка</h3>
+                    <p>Регулярная уборка для поддержания идеальной чистоты.</p>
+                    <div class="price">от 2 490 ₽</div>
+                    <button class="btn btn-primary">Заказать</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>Генеральная уборка</h3>
+                    <p>Полная уборка помещения с тщательной обработкой.</p>
+                    <div class="price">от 4 990 ₽</div>
+                    <button class="btn btn-primary">Заказать</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>Уборка после ремонта</h3>
+                    <p>Удаление строительной пыли и загрязнений.</p>
+                    <div class="price">от 6 990 ₽</div>
+                    <button class="btn btn-primary">Заказать</button>
+                </div>
+
+                <div class="service-card">
+                    <h3>Мытьё окон</h3>
+                    <p>Кристальная чистота окон и стеклянных поверхностей.</p>
+                    <div class="price">от 1 490 ₽</div>
+                    <button class="btn btn-primary">Заказать</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULATOR -->
+    <section class="calculator" id="calculator">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Калькулятор стоимости</h2>
+            </div>
+
+            <form class="calc-form">
+
+                <select>
+                    <option>Тип уборки</option>
+                    <option>Поддерживающая</option>
+                    <option>Генеральная</option>
+                    <option>После ремонта</option>
+                    <option>Мытьё окон</option>
+                </select>
+
+                <select>
+                    <option>Количество комнат</option>
+                    <option>1 комната</option>
+                    <option>2 комнаты</option>
+                    <option>3 комнаты</option>
+                    <option>4+ комнаты</option>
+                </select>
+
+                <input
+                    type="tel"
+                    placeholder="Введите номер телефона"
+                >
+
+                <button class="btn btn-primary">
+                    Рассчитать стоимость
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Отзывы клиентов</h2>
+            </div>
+
+            <div class="reviews-grid">
+
+                <div class="review-card">
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                    <p>
+                        "Приехали вовремя, убрали квартиру идеально.
+                        Очень довольна сервисом!"
+                    </p>
+                    <h4>Анна К.</h4>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                    <p>
+                        "Заказывал уборку после ремонта.
+                        Результат превзошёл ожидания."
+                    </p>
+                    <h4>Дмитрий С.</h4>
+                </div>
+
+                <div class="review-card">
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                    <p>
+                        "Пользуюсь услугами регулярно.
+                        Всегда качественно и быстро."
+                    </p>
+                    <h4>Мария П.</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contacts">
+
+        <div class="container footer-grid">
+
+            <div>
+                <h3>CleanPro</h3>
+                <p>Профессиональный клининг квартир, домов и офисов.</p>
+            </div>
+
+            <div>
+                <h3>Контакты</h3>
+                <p>+7 (999) 123-45-67</p>
+                <p>info@cleanpro.ru</p>
+            </div>
+
+            <div>
+                <h3>Соцсети</h3>
+
+                <div class="socials">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3>Карта</h3>
+
+                <div class="map-placeholder">
+                    Карта
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 CleanPro. Все права защищены.
+        </div>
+
+    </footer>
+
+</body>
+</html>
